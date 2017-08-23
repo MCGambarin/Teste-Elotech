@@ -1,15 +1,13 @@
-var app = angular.module('testeApp', ["ngRoute"]);
+var app = angular.module('testeApp', ["ngRoute", 'ui.bootstrap']);
 
-app.controller("listaController", function($scope){
-
-});
 
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "index.html"
+        templateUrl : "views/lista.html"
     })
-    .when("/detalhes", {
-        templateUrl : "views/detalhes.html"
-    });
-})
+    .when("/detalhes/:url", {
+        templateUrl : "views/detalhes.html",
+        controller : "detalheController"
+    })
+});
