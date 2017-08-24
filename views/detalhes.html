@@ -4,13 +4,11 @@
 	</div>
 	<div class="col-md-12"  id="ajsutePrimeiraColuna">
 		<div class="col-md-4"> 
-			<h4>Nome: </h4>{{detalhe.name}}
-			
+			<h4>Nome: </h4>{{detalhe.name}}	
 		</div>
 		<div class="col-md-4"> 
 			<h4>Descrição:</h4> {{detalhe.description}}
 		</div>
-
 		<div class="col-md-4">
 			<h4>Data Criação:</h4> <span class="glyphicon glyphicon-calendar"></span> {{detalhe.created_at | date:'dd/MM/yyyy'}}
 		</div>
@@ -19,11 +17,9 @@
 		<div class="col-md-4">
 		   <span class="glyphicon glyphicon-star-empty"></span> Total de estrelas: {{detalhe.stargazers_count}}
 		</div>
-
 		<div class="col-md-4">	
 		    <span class="glyphicon glyphicon-share"></span> Total de issues: {{detalhe.open_issues_count}}
 		</div>
-	
 		<div class="col-md-4">
 		  <span class="glyphicon glyphicon-eye-open"></span> Total de observadores: {{detalhe.watchers}}
 		</div>
@@ -32,7 +28,6 @@
 		<div class="col-md-6">
 			<span id="ajusteFont">Linguagem projeto: </span><span>{{detalhe.language}}</span>
 		</div>
-
 		<div class="col-md-6">
 		  <span id="ajusteFont"><span ng-show="detalhe.private">Repositório privado</span><span ng-show="!detalhe.private">Repositório público</span></span>
 		</div>
