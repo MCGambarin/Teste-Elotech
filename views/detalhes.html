@@ -1,35 +1,35 @@
 <div ng-init="buscarRepositorios()" class="row" id="ajusteDetalhes">
 	<div class="col-md-12" align="Middle"> 
-		<img ng-src="{{detalhe.owner.avatar_url}}" id="imgDetalhes">
+		<img ng-src="{{detalhes.owner.avatar_url}}" id="imgDetalhes">
 	</div>
 	<div class="col-md-12"  id="ajsutePrimeiraColuna">
 		<div class="col-md-4"> 
-			<h4>Nome: </h4>{{detalhe.name}}	
+			<h4>Nome: </h4>{{detalhes.name}}	
 		</div>
 		<div class="col-md-4"> 
-			<h4>Descrição:</h4> {{detalhe.description}}
+			<h4>Descrição:</h4> {{detalhes.description}}
 		</div>
 		<div class="col-md-4">
-			<h4>Data Criação:</h4> <span class="glyphicon glyphicon-calendar"></span> {{detalhe.created_at | date:'dd/MM/yyyy'}}
+			<h4>Data Criação:</h4> <span class="glyphicon glyphicon-calendar"></span> {{detalhes.created_at | date:'dd/MM/yyyy'}}
 		</div>
 	</div>
 	<div class="col-md-12" id="ajsuteColunas">
 		<div class="col-md-4">
-		   <span class="glyphicon glyphicon-star-empty"></span> Total de estrelas: {{detalhe.stargazers_count}}
+		   <span class="glyphicon glyphicon-star-empty"></span> Total de estrelas: {{detalhes.stargazers_count}}
 		</div>
 		<div class="col-md-4">	
-		    <span class="glyphicon glyphicon-share"></span> Total de issues: {{detalhe.open_issues_count}}
+		    <span class="glyphicon glyphicon-share"></span> Total de issues: {{detalhes.open_issues_count}}
 		</div>
 		<div class="col-md-4">
-		  <span class="glyphicon glyphicon-eye-open"></span> Total de observadores: {{detalhe.watchers}}
+		  <span class="glyphicon glyphicon-eye-open"></span> Total de observadores: {{detalhes.watchers}}
 		</div>
 	</div>
 	<div class="col-md-12" id="ajsuteColunas" align="Middle">
 		<div class="col-md-6">
-			<span id="ajusteFont">Linguagem projeto: </span><span>{{detalhe.language}}</span>
+			<span id="ajusteFont">Linguagem projeto: </span><span>{{detalhes.language}}</span>
 		</div>
 		<div class="col-md-6">
-		  <span id="ajusteFont"><span ng-show="detalhe.private">Repositório privado</span><span ng-show="!detalhe.private">Repositório público</span></span>
+		  <span id="ajusteFont"><span ng-show="detalhes.private">Repositório privado</span><span ng-show="!detalhes.private">Repositório público</span></span>
 		</div>
 	</div>
 	<div class="col-md-12" id="ajsuteColunas" align="Middle">
