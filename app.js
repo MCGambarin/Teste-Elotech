@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "views/lista.html"
     })
-    .when("/detalhes/:url", {
+    .when("/detalhes/:owner/:repo", {
         templateUrl : "views/detalhes.html",
         controller : "detalheController"
     })

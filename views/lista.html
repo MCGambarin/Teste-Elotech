@@ -1,13 +1,13 @@
 <div ng-controller="listaController" ng-init="buscarRepositorios()" class="row" align="Middle">
 	<h3>Lista de repositórios públicos GitHub</h3>
-	<div ng-repeat="repositorio in lista.items" style="margin-top: 10px;">
-		<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" style="margin-top: 10px;">
+	<div ng-repeat="repositorio in lista.items" id="ajustePortfoil">
+		<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="ajustePortfoil">
           <div class="card h-100">
-            <img ng-src="{{repositorio.owner.avatar_url}}" style="width:100px;height:100px;">
+            <img ng-src="{{repositorio.owner.avatar_url}}" id="tamanhoImg">
             <div class="card-body">
 	            <h4><div>Nome: {{repositorio.name | limitTo: 12}}{{repositorio.name.length > 15 ? '...' : ''}}</div></h4>
-	            <h5><div style="margin-top: -10px;">Criador: {{repositorio.owner.login}}</div></h5>
-	            <a ng-href="#!/detalhes/{{repositorio.name}}">Visualizar detalhes repositório</a>
+	            <h5><div id="ajsuteOwner">Criador: {{repositorio.owner.login}}</div></h5>
+	            <a ng-href="#!/detalhes/{{repositorio.owner.login}}/{{repositorio.name}}">Visualizar detalhes repositório</a>
             </div>
           </div>
 		</div>

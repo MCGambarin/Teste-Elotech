@@ -1,3 +1,38 @@
 .container{
 	margin-top: 50px;
 }
+
+#tamanhoImg{
+	width: 100px;
+	height: 100px;
+}
+
+#ajsuteOwner{
+	margin-top: -10px;
+}
+
+#ajustePortfoil{
+	margin-top: 10px;
+}
+
+#ajusteFont{
+	font-size: 18px;
+	font: bold;
+}
+
+#ajsuteColunas{
+	margin-top: 50px;
+}
+
+#imgDetalhes{
+	width: 200px;
+	height: 200px;
+}
+
+#ajusteDetalhes{
+	margin: 20px;
+}
+
+#ajsutePrimeiraColuna{
+	margin-top: 80px;
+}
